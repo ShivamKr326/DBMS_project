@@ -214,7 +214,7 @@
 
 # - Worker Processes -
 
-#max_worker_processes = 8		# (change requires restart)
+#max_worker_processes = 20		# (change requires restart)
 #max_parallel_workers_per_gather = 2	# limited by max_parallel_workers
 #max_parallel_maintenance_workers = 2	# limited by max_parallel_workers
 #max_parallel_workers = 8		# number of max_worker_processes that
@@ -806,7 +806,7 @@ autovacuum_worker_slots = 16	# autovacuum worker slots to allocate
 
 #local_preload_libraries = ''
 #session_preload_libraries = ''
-#shared_preload_libraries = ''		# (change requires restart)
+#shared_preload_libraries = 'lsm3'		# (change requires restart)
 #jit_provider = 'llvmjit'		# JIT library to use
 
 # - Other Defaults -
